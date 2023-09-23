@@ -1,0 +1,9 @@
+.app {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app a {
+  color: black;
+  text-decoration: none;
+}

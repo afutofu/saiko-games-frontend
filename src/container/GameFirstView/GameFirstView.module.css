@@ -1,0 +1,218 @@
+.gameFirstView {
+  position: relative;
+  width: 100%;
+  min-height: 96vh;
+  overflow: hidden;
+}
+
+.containerWidth {
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+.wideContainer {
+  position: absolute;
+  top: 52%;
+  height: 48%;
+  width: 100%;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 60%;
+  background-color: #fbfbfb;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.smallDetail {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.cover {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+  bottom: 70%;
+}
+
+.detailListContainer {
+  position: absolute;
+  padding: 20px;
+  font-size: 0.9rem;
+  top: 30%;
+}
+
+.detailList {
+  margin-bottom: 10px;
+}
+
+.detailList .title {
+  font-weight: 500;
+}
+
+.websiteLink {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.about {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  line-height: 1.5rem;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-left: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.about .title {
+  position: absolute;
+  bottom: 128%;
+  width: 60vw;
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  overflow: visible !important;
+}
+
+.secondaryInfo {
+  position: absolute;
+  bottom: 100%;
+  width: 60vw;
+  color: white;
+  margin-bottom: 20px;
+  overflow: visible !important;
+}
+
+.secondaryInfo p:nth-of-type(1) {
+  margin-bottom: 8px;
+}
+
+.secondaryInfo p:nth-of-type(2) {
+  font-style: italic;
+}
+
+.daysAgo {
+  margin-left: 10px !important;
+}
+
+.aboutInfo p {
+  margin-bottom: 20px;
+}
+
+.ratings {
+  width: 25%;
+  padding: 20px;
+}
+
+.goBackButton {
+  position: absolute;
+  background: none;
+  border: none;
+  padding: none;
+  margin: none;
+  top: 45%;
+  left: 10%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.goBackButton i {
+  color: white;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .cover {
+    display: none;
+  }
+
+  .wideContainer {
+    top: 40%;
+    height: 60%;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .detailListContainer {
+    position: relative;
+    top: 0px;
+  }
+
+  .about .title {
+    position: absolute;
+    left: 5%;
+    bottom: 125%;
+    width: 90%;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    overflow: visible !important;
+  }
+
+  .secondaryInfo {
+    left: 5%;
+    width: 90%;
+  }
+
+  .smallDetail {
+    position: relative;
+    width: 95%;
+    height: unset;
+  }
+
+  .about {
+    width: 95%;
+    border: none;
+    padding: 0 20px;
+  }
+
+  .ratings {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about .title {
+    bottom: 122%;
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+
+  .secondaryInfo {
+    font-size: 14px;
+  }
+}

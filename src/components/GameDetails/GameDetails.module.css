@@ -1,0 +1,20 @@
+.gameDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailSection {
+  margin-bottom: 7px;
+}
+
+.detailSection .title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.detailEntry {
+  margin: 0;
+  margin-bottom: 5px;
+}

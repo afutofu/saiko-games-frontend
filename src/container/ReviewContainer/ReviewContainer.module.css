@@ -1,0 +1,40 @@
+.reviewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.reviews {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.loadMoreButton {
+  margin-top: 1vh;
+  height: 5vh;
+  width: 15vw;
+  background: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  transition: 0.2s;
+}
+
+.loadMoreButton:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 992px) {
+  .loadMoreButton {
+    width: 200px;
+  }
+}

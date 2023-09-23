@@ -1,0 +1,116 @@
+.featuredGameBox {
+  height: 300px;
+}
+
+.featuredGame {
+  position: absolute;
+  left: -5%;
+  width: 110%;
+  height: 300px;
+  background: none;
+  color: white;
+  margin-bottom: 41vh;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: border 1s;
+}
+
+.featuredGame:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.screenshot {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.container:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.cover {
+  width: 205px;
+}
+
+.infoContainer {
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.infoContainer * {
+  margin: 0;
+}
+
+.name {
+  font-size: 45px;
+  margin-bottom: 7px;
+}
+
+.genres {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.storyline {
+  line-height: 1.9rem;
+  font-size: 22px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .featuredGame {
+    width: 100%;
+    left: 0;
+  }
+
+  .name {
+    font-size: 35px;
+  }
+
+  .storyline {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cover {
+    display: none;
+  }
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .genres {
+    font-size: 20px;
+  }
+
+  .storyline {
+    font-size: 16px;
+  }
+}

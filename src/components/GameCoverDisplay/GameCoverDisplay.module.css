@@ -1,0 +1,102 @@
+@value displayHeight: 100%;
+@value infoPadding: 10px;
+
+.gameCoverDisplay {
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid rgba(112, 112, 112, 0.3);
+  height: displayHeight;
+  width: 200px;
+  transition: 0.25s;
+  margin: 0 20px;
+}
+
+.gameCoverDisplay:first-of-type {
+  margin-left: 0;
+}
+
+.gameCoverDisplay:hover {
+  cursor: pointer;
+  border: 2px solid rgba(112, 112, 112, 1);
+}
+
+.gameCoverDisplay .infoContainer * {
+  margin: 0;
+}
+
+.link {
+  height: 100%;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 265px;
+  height: 80%;
+}
+
+.infoContainer {
+  position: relative;
+  padding: infoPadding;
+  height: 20%;
+  box-sizing: border-box;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 32px;
+}
+
+.nameSmall {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 25px !important;
+}
+
+.nameExtraSmall {
+  font-size: 11px;
+  font-weight: 500;
+  margin-right: 25px !important;
+}
+
+.genre {
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+.genreSmall {
+  font-size: 14px;
+  margin-right: 25px !important;
+}
+
+.genreExtraSmall {
+  font-size: 10px;
+  margin-right: 25px !important;
+}
+
+.rating {
+  position: absolute;
+  top: 10px;
+  right: infoPadding;
+  font-size: 23px;
+}
+
+.ratingSmall {
+  position: absolute;
+  top: 10px;
+  right: infoPadding;
+  font-size: 18px;
+}
+
+.ratingExtraSmall {
+  position: absolute;
+  top: 10px;
+  right: infoPadding;
+  font-size: 13px;
+}

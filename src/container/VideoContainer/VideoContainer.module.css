@@ -1,0 +1,54 @@
+.videosContainer {
+  position: relative;
+  height: 140vh;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 100;
+}
+
+.buttons button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.buttons i {
+  font-size: 2rem;
+}
+
+.prevButton {
+  transform: translateX(-60%);
+}
+
+.nextButton {
+  transform: translateX(60%);
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.video {
+  position: relative;
+  height: 60vh;
+  min-width: 100%;
+  border: none;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 15%;
+  z-index: 200;
+}

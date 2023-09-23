@@ -1,0 +1,99 @@
+.ratingBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px !important;
+  overflow: hidden;
+}
+
+.title {
+  position: relative;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.rating {
+  position: relative;
+  opacity: 0;
+}
+
+.title,
+.rating {
+  z-index: 100;
+}
+
+.ratingBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateX(-100%);
+  background: greenyellow;
+  z-index: 0;
+}
+
+.slideIn1 {
+  animation: slideIn 1s 1s ease forwards;
+}
+
+.slideIn2 {
+  animation: slideIn 1s 2s ease forwards;
+}
+
+.slideIn3 {
+  animation: slideIn 1s 3s ease forwards;
+}
+
+.fadeIn1 {
+  animation: fadeIn 1s 1s ease forwards;
+}
+
+.fadeIn2 {
+  animation: fadeIn 1s 2s ease forwards;
+}
+
+.fadeIn3 {
+  animation: fadeIn 1s 3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ratingBox {
+    width: 150px;
+    margin: 0 10px !important;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .ratingBox:first-of-type,
+  .ratingBox:last-of-type {
+    margin: 0 !important;
+  }
+
+  .ratingBox .title {
+    margin-right: 8px;
+  }
+}
