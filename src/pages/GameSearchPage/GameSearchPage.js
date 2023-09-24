@@ -8,6 +8,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import defaultBackground from "../../assets/images/defaultBackground.jpg";
 
 import styles from "./GameSearchPage.module.css";
+import api from "../../api";
 
 const GameSearchPage = (props) => {
   const [games, setGames] = useState([]);
@@ -51,7 +52,7 @@ const GameSearchPage = (props) => {
   const fetchData = async (body) => {
     const url = `https://api.igdb.com/v4/games`;
 
-    const res = await axios.post("/api/games", { url, body });
+    const res = await api.post("/api/games", { url, body });
     return res.data;
   };
 
