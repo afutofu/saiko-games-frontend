@@ -62,7 +62,7 @@ const FrontPage = () => {
   const fetchData = async (body) => {
     const url = `https://api.igdb.com/v4/games`;
 
-    const res = await api("/api/games", { url, body });
+    const res = await api.post("/api/games", { url, body });
 
     loadCount += 1;
     return res.data;
