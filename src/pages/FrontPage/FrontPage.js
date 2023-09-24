@@ -12,6 +12,7 @@ import Spinner from "../../components/Spinner/Spinner";
 import defaultBackground from "../../assets/images/defaultBackground.jpg";
 
 import styles from "./FrontPage.module.css";
+import api from "../../api";
 
 let loadCount = 0;
 
@@ -61,7 +62,7 @@ const FrontPage = () => {
   const fetchData = async (body) => {
     const url = `https://api.igdb.com/v4/games`;
 
-    const res = await axios.post("/api/games", { url, body });
+    const res = await api("/api/games", { url, body });
 
     loadCount += 1;
     return res.data;
