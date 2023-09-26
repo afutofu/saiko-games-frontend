@@ -1,6 +1,6 @@
 # Saiko Games
 
-Website Link: [Saiko Games](https://saiko-games.herokuapp.com/)
+Website Link: [Saiko Games](https://saiko-games.netlify.app/)
 
 A video game information website that displays current releases, most popular and featured games, and video game information and reviews.
 
