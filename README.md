@@ -2,6 +2,8 @@
 
 Website Link: [Saiko Games](https://saiko-games.netlify.app/)
 
+Backend Repository: [saiko-games-backend](https://github.com/afutofu/saiko-games-backend)
+
 A video game information website that displays current releases, most popular and featured games, and video game information and reviews.
 
 Technologies used:
